@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
 <package>
     <name>Imsc_Refersion</name>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
     <stability>stable</stability>
-    <license>GNU General Public License (GPL)</license>
+    <license>GPL</license>
     <channel>community</channel>
     <extends/>
-    <summary>Create a customized Affiliate Program for your shop in minutes. Build partnerships and generate more sales.</summary>
-    <description>Create a customized Affiliate Program for your shop in minutes. Build partnerships and generate more sales.</description>
-    <notes>None</notes>
+    <summary>Refersion for Magento</summary>
+    <description>Create an affiliate program in minutes. No technical knowledge required.</description>
+    <notes>- Added option to include your custom subdomain.&#xD;
+- Layout bug fixes.</notes>
     <authors><author><name>Refersion</name><user>refersion</user><email>helpme@refersion.com</email></author></authors>
-    <date>2016-08-29</date>
-    <time>19:57:11</time>
-    <contents><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="refersion.xml" hash=""/></dir><dir name="template"><dir name="refersion"><file name="successpixel.phtml" hash=""/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="refersion"><file name="refersion.png" hash=""/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ismc_Refersion.xml" hash=""/></dir></target></contents>
+    <date>2016-10-19</date>
+    <time>17:30:23</time>
+    <contents><target name="magecommunity"><dir name="Imsc"><dir name="Refersion"><dir name="Block"><file name="Successpixel.php" hash="13dccbf7e8d71dc0cd0e1a68afbd1ee6"/></dir><dir name="Helper"><file name="Data.php" hash="139834578c9502dbd5a6a3ca27f02533"/></dir><dir name="Model"><file name="Observer.php" hash="78aaed030e9f690847c9b1c5ff9fcb16"/></dir><dir name="etc"><file name="adminhtml.xml" hash="183f60e514c0ed88d4f2ca9fcc99fe76"/><file name="config.xml" hash="ec536acc134ffbd4c6b623cbd88c1421"/><file name="system.xml" hash="b6dd8a18d13f6187329c1e6a983932b7"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="refersion.xml" hash="18a9161030938550e1dc873d36ee4f63"/></dir><dir name="template"><dir name="refersion"><file name="successpixel.phtml" hash="6e76af5fbe4a8fc46b95c10bdec60b7f"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Imsc_Refersion.xml" hash="ce8651420baf2d3a6501c11b74ea38d3"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="refersion"><file name="refersion.png" hash="6370cbe1d669c5f7228b00bfa5410e38"/></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.4.0</min><max>7.0.0</max></php></required></dependencies>
 </package>

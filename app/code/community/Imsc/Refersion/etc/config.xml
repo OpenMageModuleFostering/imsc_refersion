@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GNU General Public License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/gpl-license
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@refersion.com so we can send you a copy immediately.
+ *
+ * @category   IMSC
+ * @package    IMSC_Refersion
+ * @copyright  Copyright (c) 2015 Refersion, Inc.
+ * @license    http://opensource.org/licenses/gpl-license GNU General Public License
+ */
+-->
+<config>
+  <modules>
+    <Imsc_Refersion>
+      <version>0.1.4</version>
+    </Imsc_Refersion>
+  </modules>
+  <global>
+    <helpers>
+      <refersion>
+        <class>Imsc_Refersion_Helper</class>
+      </refersion>
+    </helpers>
+		<models>
+			<refersion>
+					<class>Imsc_Refersion_Model</class>
+			</refersion>
+		</models>
+		<blocks>
+			<refersion>
+				<class>Imsc_Refersion_Block</class>
+			</refersion>
+		</blocks>
+		<events>
+			<sales_order_place_after>
+				<observers>
+						<refersion>
+								<type>singleton</type>
+								<class>refersion/observer</class>
+								<method>onOrderPlacedAfter</method>
+						</refersion>
+				</observers>
+			</sales_order_place_after>
+		</events>
+  </global>
+	<frontend>
+		<routers>
+			<refersion>
+				<use>standard</use>
+				<args>
+					<module>Imsc_Refersion</module>
+					<frontName>refersion</frontName>
+				</args>
+			</refersion>
+		</routers>
+		<layout>
+			<updates>
+				<refersion>
+					<file>refersion.xml</file>
+				</refersion>
+			</updates>
+		</layout>
+	</frontend>
+</config> 

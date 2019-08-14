@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+/*
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GNU General Public License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/gpl-license
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@refersion.com so we can send you a copy immediately.
+ *
+ * @category   IMSC
+ * @package    IMSC_Refersion
+ * @copyright  Copyright (c) 2015 Refersion, Inc.
+ * @license    http://opensource.org/licenses/gpl-license GNU General Public License
+ */
+-->
+<config>
+  <tabs>
+    <imsc_refersion translate="label" module="refersion">
+      <label><![CDATA[<div style="position: absolute;"><img id="refersion_block" src="" alt="" border="0" /></div>&nbsp;<script>document.getElementById('refersion_block').src = SKIN_URL + "refersion/refersion.png";</script>]]></label>
+      <sort_order>301</sort_order>
+    </imsc_refersion>
+  </tabs>
+  <sections>
+    <refersion  translate="label" module="refersion">
+      <label>Settings</label>
+      <tab>imsc_refersion</tab>
+      <frontend_type>text</frontend_type>
+      <sort_order>1</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
+      <groups>
+        <refersion_settings translate="label">
+          <label>Settings</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>1</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <refersion_api_key translate="label">
+              <label>Public API Key</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>1</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+              <comment><![CDATA[<a href="http://refersion.uservoice.com/knowledgebase/articles/337317" target="_blank">Enter the Api key provided by Refersion</a>]]></comment>
+            </refersion_api_key>
+            <refersion_secret_key translate="label">
+              <label>Secret API Key</label>
+              <frontend_type>password</frontend_type>
+              <sort_order>2</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </refersion_secret_key>
+            <refersion_subdomain translate="label">
+              <label>Subdomain (optional):</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>3</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </refersion_subdomain>
+            <refersion_active translate="label">
+              <label>Enabled</label>
+              <frontend_type>select</frontend_type>
+              <source_model>adminhtml/system_config_source_yesno</source_model>
+              <sort_order>4</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </refersion_active>
+          </fields>
+        </refersion_settings>
+      </groups>
+    </refersion>
+  </sections>
+</config>
