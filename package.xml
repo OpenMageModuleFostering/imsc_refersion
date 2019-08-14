@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <package>
-    <name>Imsc_Refersion</name>
-    <version>0.1.8</version>
+    <name>Imsc_refersion</name>
+    <version>0.1.9</version>
     <stability>stable</stability>
     <license>GNU General Public License</license>
     <channel>community</channel>
     <extends/>
     <summary>Create a customized Affiliate Program for your shop in minutes. Build partnerships and generate more sales.</summary>
-    <description>Imagine generating more sales through commission based partnerships with Bloggers, Internet Marketers, Publishers, and so forth. Using Refersion, you&amp;amp;amp;apos;ll be able to track performance for all of your Affiliates and generate more streams of revenue at the same time.&amp;#xD;&#xD;
-&amp;#xD;&#xD;
+    <description>Imagine generating more sales through commission based partnerships with Bloggers, Internet Marketers, Publishers, and so forth. Using Refersion, you&amp;amp;amp;amp;amp;apos;ll be able to track performance for all of your Affiliates and generate more streams of revenue at the same time.&amp;amp;amp;#xD;&amp;amp;#xD;&amp;#xD;&#xD;
+&amp;amp;amp;#xD;&amp;amp;#xD;&amp;#xD;&#xD;
 It only takes a few minutes to setup your Affiliate Program and there is zero technical knowledge required.</description>
-    <notes>- Moved tracking code to head of all pages.</notes>
+    <notes>- General Bug Fixes</notes>
     <authors><author><name>Refersion</name><user>admin</user><email>helpme@refersion.com</email></author></authors>
-    <date>2017-02-09</date>
-    <time>17:42:57</time>
-    <contents><target name="magecommunity"><dir name="Imsc"><dir name="Refersion"><dir name="Block"><file name="Tracker.php" hash="bfed9b3a9d38ae3556e40781a53424a0"/></dir><dir name="Helper"><file name="Data.php" hash="5c02c0c408285cdeb94fe30392b85fe4"/></dir><dir name="etc"><file name="adminhtml.xml" hash="183f60e514c0ed88d4f2ca9fcc99fe76"/><file name="config.xml" hash="355b7302cb546262afcdc8ede7df3ffa"/><file name="system.xml" hash="b6dd8a18d13f6187329c1e6a983932b7"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><file name="layout" hash=""/><dir name="template"><dir name="refersion"><file name="rfsn_success.phtml" hash="26301d4df396e7a1a9a9db51ea7cac69"/><file name="rfsn_tracking.phtml" hash="9aac630823f9105c3d8600166ae083db"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Imsc_Refersion.xml" hash="b1d86a67fc408a177648f622d1f1ef6c"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="refersion"><file name="refersion.png" hash="6370cbe1d669c5f7228b00bfa5410e38"/></dir></dir></dir></dir></target></contents>
+    <date>2017-02-22</date>
+    <time>18:16:43</time>
+    <contents><target name="magecommunity"><dir name="Imsc"><dir name="Refersion"><dir name="Block"><file name="Tracker.php" hash="bfed9b3a9d38ae3556e40781a53424a0"/></dir><dir name="Helper"><file name="Data.php" hash="5c02c0c408285cdeb94fe30392b85fe4"/></dir><dir name="etc"><file name="adminhtml.xml" hash="183f60e514c0ed88d4f2ca9fcc99fe76"/><file name="config.xml" hash="23064f27989c647490aa41e8fa7c0db1"/><file name="system.xml" hash="b6dd8a18d13f6187329c1e6a983932b7"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="refersion.xml" hash="db176cc427fd7b8e97136c5fe449ae35"/></dir><dir name="template"><dir name="refersion"><file name="rfsn_success.phtml" hash="26301d4df396e7a1a9a9db51ea7cac69"/><file name="rfsn_tracking.phtml" hash="9aac630823f9105c3d8600166ae083db"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Imsc_Refersion.xml" hash="c1a5b48c3abba62ee15e9f2cd8320936"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="refersion"><file name="refersion.png" hash="6370cbe1d669c5f7228b00bfa5410e38"/></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>7.1.1</max></php></required></dependencies>
 </package>

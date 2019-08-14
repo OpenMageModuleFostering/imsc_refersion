@@ -22,7 +22,7 @@
 <config>
   <modules>
     <Imsc_Refersion>
-      <version>0.1.7</version>
+      <version>0.1.9</version>
     </Imsc_Refersion>
   </modules>
   <global>
