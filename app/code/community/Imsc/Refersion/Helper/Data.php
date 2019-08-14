@@ -74,7 +74,7 @@ class Imsc_Refersion_Helper_Data extends Mage_Core_Helper_Abstract
             $order_json['discount_code'] = $order->getCouponCode();
 
             //Get all the items for the order to fecth individual details
-            $items = $order->getAllItems();
+            $items = $order->getAllVisibleItems();
 
             foreach ($items as $itemId => $item) {
                 $order_json['products'][$item->getProductId()]['sku'] = $item->getSku();
