@@ -22,7 +22,7 @@
 <config>
   <modules>
     <Imsc_Refersion>
-      <version>0.1.5</version>
+      <version>0.1.6</version>
     </Imsc_Refersion>
   </modules>
   <global>
@@ -41,17 +41,6 @@
 				<class>Imsc_Refersion_Block</class>
 			</refersion>
 		</blocks>
-		<events>
-			<sales_order_place_after>
-				<observers>
-					<refersion>
-						<type>singleton</type>
-						<class>refersion/observer</class>
-						<method>onOrderPlacedAfter</method>
-					</refersion>
-				</observers>
-			</sales_order_place_after>
-		</events>
   </global>
 	<frontend>
 		<routers>

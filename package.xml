@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <package>
-    <name>Imsc_Refersion</name>
-    <version>0.1.5</version>
+    <name>Imsc_refersion</name>
+    <version>0.1.6</version>
     <stability>stable</stability>
     <license>GNU General Public License</license>
     <channel>community</channel>
     <extends/>
     <summary>Create a customized Affiliate Program for your shop in minutes. Build partnerships and generate more sales.</summary>
-    <description>Imagine generating more sales through commission based partnerships with Bloggers, Internet Marketers, Publishers, and so forth. Using Refersion, you'll be able to track performance for all of your Affiliates and generate more streams of revenue at the same time.&#xD;
+    <description>Imagine generating more sales through commission based partnerships with Bloggers, Internet Marketers, Publishers, and so forth. Using Refersion, you&amp;apos;ll be able to track performance for all of your Affiliates and generate more streams of revenue at the same time.&#xD;
 &#xD;
 It only takes a few minutes to setup your Affiliate Program and there is zero technical knowledge required.</description>
-    <notes>- Updated tracking webhook to use our newest system.&#xD;
-- Cleaned up code and removed obsolete files.</notes>
-    <authors><author><name>Imsc</name><user>admin</user><email>helpme@refersion.com</email></author></authors>
-    <date>2017-01-25</date>
-    <time>20:16:16</time>
-    <contents><target name="magecommunity"><dir name="Imsc"><dir name="Refersion"><dir name="Block"><file name="Successpixel.php" hash="127242944613af034abffce79bd271f6"/><file name="Tracker.php" hash="e53984776ffa748cb45c695f5e591545"/></dir><dir name="Helper"><file name="Data.php" hash="139834578c9502dbd5a6a3ca27f02533"/></dir><dir name="Model"><file name="Observer.php" hash="65623346720bd6a20637dd9ffc1dda17"/></dir><dir name="etc"><file name="adminhtml.xml" hash="183f60e514c0ed88d4f2ca9fcc99fe76"/><file name="config.xml" hash="80f2144bba32c49f7e0fcf191a2e3a06"/><file name="system.xml" hash="b6dd8a18d13f6187329c1e6a983932b7"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="refersion.xml" hash="7406f7fa526bc85c44b38fc30197ddee"/></dir><dir name="template"><dir name="refersion"><file name="rfsn_tracking.phtml" hash="9aac630823f9105c3d8600166ae083db"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Imsc_Refersion.xml" hash="a4bbe36faa14ea8a5cea8226de773f19"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="refersion"><file name="refersion.png" hash="6370cbe1d669c5f7228b00bfa5410e38"/></dir></dir></dir></dir></target></contents>
+    <notes>- Improved tracking workflow.&#xD;
+- Code cleanup</notes>
+    <authors><author><name>Refersion</name><user>admin</user><email>helpme@refersion.com</email></author></authors>
+    <date>2017-01-27</date>
+    <time>17:06:34</time>
+    <contents><target name="magecommunity"><dir name="Imsc"><dir name="Refersion"><dir name="Block"><file name="Tracker.php" hash="bfed9b3a9d38ae3556e40781a53424a0"/></dir><dir name="Helper"><file name="Data.php" hash="71c2e45610a3ce1d5a173202ca7031cf"/></dir><dir name="etc"><file name="adminhtml.xml" hash="183f60e514c0ed88d4f2ca9fcc99fe76"/><file name="config.xml" hash="1d95743b5e52230bd4c26b2e13708be4"/><file name="system.xml" hash="b6dd8a18d13f6187329c1e6a983932b7"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="refersion.xml" hash="d9bd081492fd434634d21f52db292da0"/></dir><dir name="template"><dir name="refersion"><file name="rfsn_success.phtml" hash="6b4910654c914c575ad8665577b315b5"/><file name="rfsn_tracking.phtml" hash="9aac630823f9105c3d8600166ae083db"/><file name="successpixel.phtml" hash="a9db58d341c734ae46c17f4361db4732"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Imsc_Refersion.xml" hash="2b60ed0c3d0f0cad00c0e73896cf049a"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="refersion"><file name="refersion.png" hash="6370cbe1d669c5f7228b00bfa5410e38"/></dir></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.2.0</min><max>7.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>7.1.1</max></php></required></dependencies>
 </package>

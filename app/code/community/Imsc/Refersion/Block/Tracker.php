@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Numa
- * Date: 1/24/2017
- * Time: 5:26 PM
- */
 class Imsc_Refersion_Block_Tracker extends Mage_Core_Block_Template
 {
     /**

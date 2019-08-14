@@ -1,11 +1,10 @@
-<?xml version="1.0"?>
-<!--
+<?php
 /*
  * Magento
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the GNU General Public License
+ * This source file is subject to the GNU General Public License)
  * that is bundled with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/gpl-license
@@ -18,13 +17,9 @@
  * @copyright  Copyright (c) 2015 Refersion, Inc.
  * @license    http://opensource.org/licenses/gpl-license GNU General Public License
  */
--->
-<config>
-  <modules>
-    <Imsc_Refersion>
-      <active>true</active>
-      <codePool>community</codePool>
-      <version>0.1.6</version>
-    </Imsc_Refersion>
-  </modules>
-</config>
+?>
+<?php if($this->isEnabled()):?>
+<!--<script type="text/javascript">
+var image = new Image(); document.body.appendChild(image); image.src = "<?php echo $this->getSuccessPixel(); ?>"; image.setAttribute('style', 'float: right;width:1px;height:1px;');
+</script>-->
+<?php endif; ?>

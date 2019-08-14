@@ -1,0 +1,12 @@
+<?php if($this->isEnabled()): ?>
+    <?php
+    $orderId = Mage::getSingleton('checkout/session')->getLastOrderId();
+    $helper = Mage::helper('refersion');
+    $cartId = $helper->generateCartId($orderId);
+    $helper->callRefersionWebhook($orderId, $cartId);
+    ?>
+    <!-- REFERSION TRACKING: BEGIN -->
+    <script src="<?php echo $this->getTrackingCode(); ?>"></script>
+    <script>_refersion(function(){ _rfsn._addCart('<?php echo $cartId; ?>'); });</script>
+    <!-- REFERSION TRACKING: END -->
+<?php endif; ?>

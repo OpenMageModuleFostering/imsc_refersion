@@ -19,10 +19,20 @@
  * @license    http://www.gnu.org/licenses/lgpl-3.0.html GNU Lesser General Public License (LGPL 3.0)
  */
 -->
-<layout version="0.1.4">
+<layout version="0.1.6">
 	<default>
 		<reference name="before_body_end">
 			<block type="refersion/tracker" name="refersion_tracker" template="refersion/rfsn_tracking.phtml"/>
 		</reference>
 	</default>
+	<checkout_onepage_success>
+		<reference name="before_body_end">
+			<block type="refersion/tracker" name="refersion_success" template="refersion/rfsn_success.phtml"/>
+		</reference>
+	</checkout_onepage_success>
+	<checkout_multishipping_success>
+		<reference name="before_body_end">
+			<block type="refersion/tracker" name="refersion_success" template="refersion/rfsn_success.phtml"/>
+		</reference>
+	</checkout_multishipping_success>
 </layout>

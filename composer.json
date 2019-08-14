@@ -1,12 +1,12 @@
 {
-    "name": "OpenMageModuleFostering/Imsc_Refersion",
+    "name": "OpenMageModuleFostering/Imsc_refersion",
     "type": "magento-module",
     "license": "GNU-General-Public-License",
     "homepage": "",
     "description": "Create a customized Affiliate Program for your shop in minutes. Build partnerships and generate more sales.",
     "authors": [
     {
-        "name": "Imsc",
+        "name": "Refersion",
         "email": "helpme@refersion.com"
     }
 ],
