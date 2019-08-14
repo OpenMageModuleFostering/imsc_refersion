@@ -1,19 +1,21 @@
 <?xml version="1.0"?>
 <package>
     <name>Imsc_Refersion</name>
-    <version>0.1.4</version>
+    <version>0.1.5</version>
     <stability>stable</stability>
-    <license>GPL</license>
+    <license>GNU General Public License</license>
     <channel>community</channel>
     <extends/>
-    <summary>Refersion for Magento</summary>
-    <description>Create an affiliate program in minutes. No technical knowledge required.</description>
-    <notes>- Added option to include your custom subdomain.&#xD;
-- Layout bug fixes.</notes>
-    <authors><author><name>Refersion</name><user>refersion</user><email>helpme@refersion.com</email></author></authors>
-    <date>2016-10-19</date>
-    <time>17:30:23</time>
-    <contents><target name="magecommunity"><dir name="Imsc"><dir name="Refersion"><dir name="Block"><file name="Successpixel.php" hash="13dccbf7e8d71dc0cd0e1a68afbd1ee6"/></dir><dir name="Helper"><file name="Data.php" hash="139834578c9502dbd5a6a3ca27f02533"/></dir><dir name="Model"><file name="Observer.php" hash="78aaed030e9f690847c9b1c5ff9fcb16"/></dir><dir name="etc"><file name="adminhtml.xml" hash="183f60e514c0ed88d4f2ca9fcc99fe76"/><file name="config.xml" hash="ec536acc134ffbd4c6b623cbd88c1421"/><file name="system.xml" hash="b6dd8a18d13f6187329c1e6a983932b7"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="refersion.xml" hash="18a9161030938550e1dc873d36ee4f63"/></dir><dir name="template"><dir name="refersion"><file name="successpixel.phtml" hash="6e76af5fbe4a8fc46b95c10bdec60b7f"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Imsc_Refersion.xml" hash="ce8651420baf2d3a6501c11b74ea38d3"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="refersion"><file name="refersion.png" hash="6370cbe1d669c5f7228b00bfa5410e38"/></dir></dir></dir></dir></target></contents>
+    <summary>Create a customized Affiliate Program for your shop in minutes. Build partnerships and generate more sales.</summary>
+    <description>Imagine generating more sales through commission based partnerships with Bloggers, Internet Marketers, Publishers, and so forth. Using Refersion, you'll be able to track performance for all of your Affiliates and generate more streams of revenue at the same time.&#xD;
+&#xD;
+It only takes a few minutes to setup your Affiliate Program and there is zero technical knowledge required.</description>
+    <notes>- Updated tracking webhook to use our newest system.&#xD;
+- Cleaned up code and removed obsolete files.</notes>
+    <authors><author><name>Imsc</name><user>admin</user><email>helpme@refersion.com</email></author></authors>
+    <date>2017-01-25</date>
+    <time>20:16:16</time>
+    <contents><target name="magecommunity"><dir name="Imsc"><dir name="Refersion"><dir name="Block"><file name="Successpixel.php" hash="127242944613af034abffce79bd271f6"/><file name="Tracker.php" hash="e53984776ffa748cb45c695f5e591545"/></dir><dir name="Helper"><file name="Data.php" hash="139834578c9502dbd5a6a3ca27f02533"/></dir><dir name="Model"><file name="Observer.php" hash="65623346720bd6a20637dd9ffc1dda17"/></dir><dir name="etc"><file name="adminhtml.xml" hash="183f60e514c0ed88d4f2ca9fcc99fe76"/><file name="config.xml" hash="80f2144bba32c49f7e0fcf191a2e3a06"/><file name="system.xml" hash="b6dd8a18d13f6187329c1e6a983932b7"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="refersion.xml" hash="7406f7fa526bc85c44b38fc30197ddee"/></dir><dir name="template"><dir name="refersion"><file name="rfsn_tracking.phtml" hash="9aac630823f9105c3d8600166ae083db"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Imsc_Refersion.xml" hash="a4bbe36faa14ea8a5cea8226de773f19"/></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="refersion"><file name="refersion.png" hash="6370cbe1d669c5f7228b00bfa5410e38"/></dir></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.4.0</min><max>7.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>7.0.0</max></php></required></dependencies>
 </package>

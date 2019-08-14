@@ -20,14 +20,9 @@
  */
 -->
 <layout version="0.1.4">
-	<checkout_onepage_success>
-  	<reference name="before_body_end">
-	  	<block type="refersion/successpixel" name="refersion_successpixel" template="refersion/successpixel.phtml" />
-    </reference>
-    </checkout_onepage_success>
-    <checkout_multishipping_success>
-    	<reference name="before_body_end">
-	    	<block type="refersion/successpixel" name="refersion_successpixel" template="refersion/successpixel.phtml" />
-      </reference>
-    </checkout_multishipping_success>
+	<default>
+		<reference name="before_body_end">
+			<block type="refersion/tracker" name="refersion_tracker" template="refersion/rfsn_tracking.phtml"/>
+		</reference>
+	</default>
 </layout>

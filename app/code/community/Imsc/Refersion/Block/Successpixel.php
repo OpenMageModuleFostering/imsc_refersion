@@ -35,7 +35,7 @@ class Imsc_Refersion_Block_Successpixel extends Mage_Checkout_Block_Success
     public function isEnabled()
     {
         return Mage::getStoreConfig('refersion/refersion_settings/refersion_active');
-    }//end function isEnabled
+    }
 
     /**
     *  Return refersion traking url with api and unique code
@@ -63,7 +63,7 @@ class Imsc_Refersion_Block_Successpixel extends Mage_Checkout_Block_Success
         $refersion_url = 'https://'.$subdomain.'.refersion.com/tracker/magento?k='.$api_key.'&ci='.$ci;
 
         return $refersion_url;
-    }//end funcion getSuccessPixel
+    }
 
     /**
     *  Return unique code
@@ -73,5 +73,5 @@ class Imsc_Refersion_Block_Successpixel extends Mage_Checkout_Block_Success
     private function _getUniqueCode()
     {
         return Mage::getSingleton("core/session")->getEncryptedSessionId();;
-    }//end function _getUniqueCode
+    }
 }

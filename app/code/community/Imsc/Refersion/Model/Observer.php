@@ -67,7 +67,6 @@ class Imsc_Refersion_Model_Observer
 				$order_json['order_id'] = $order->getIncrementId();
 				$order_json['unique_id'] = $ci;
 
-				$orderGrandTotal = $order->getGrandTotal();
 				$order_json['shipping'] = $order->getShippingAmount();
 
 				//Tax info
@@ -82,7 +81,6 @@ class Imsc_Refersion_Model_Observer
 
 				//Get all the items for the order to fecth individual details
 				$items = $order->getAllItems();
-				$itemcount=count($items);
 
 				foreach ($items as $itemId => $item) {
 					$order_json['products'][$item->getProductId()]['sku'] = $item->getSku();
@@ -99,12 +97,12 @@ class Imsc_Refersion_Model_Observer
 				$order_json['customer']['ip_address'] = $order->getRemoteIp();
 
 				//Sending value via curl to refersion
-				$resp = $this->curl_refersion_post($order_json);
+				$this->curl_refersion_post($order_json);
 
 		 	}
 		}
 
-	}//end function onOrderPlacedAfter
+	}
 
 	/**
 	 * Send curl request
@@ -115,7 +113,7 @@ class Imsc_Refersion_Model_Observer
 	function curl_refersion_post($data_array) {
 
 		// URL to post to
-		$url = 'https://www.refersion.com/tracker/magento/conversion';
+		$url = 'https://user1.refersion.com/tracker/magento/conversion';
 	
 		// Start cURL
 		$curl = curl_init();
@@ -129,28 +127,27 @@ class Imsc_Refersion_Model_Observer
 			CURLOPT_URL => $url,
 			CURLOPT_RETURNTRANSFER => TRUE,
 			CURLOPT_HTTPHEADER => array($headers),
-			CURLOPT_POSTFIELDS => json_encode($data_array),
+			CURLOPT_POSTFIELDS => base64_encode(json_encode($data_array)),
 			CURLOPT_TIMEOUT => 60,
 			CURLOPT_RETURNTRANSFER => TRUE,
 			CURLOPT_HEADER => FALSE,
 			CURLOPT_FOLLOWLOCATION => TRUE,
 			CURLOPT_MAXREDIRS => 3,
-			CURLOPT_USERAGENT => 'Refersion Reporter'
+			CURLOPT_USERAGENT => 'Refersion Reporter',
+			CURLOPT_SSL_VERIFYHOST => 0,
+			CURLOPT_SSL_VERIFYPEER => 0
 		);
 		curl_setopt_array($curl,$options);
 	
 		// Get response
 		$response = curl_exec($curl);
-	
-		// Get HTTP status code
-		$status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-	
+
 		// Close cURL
 		curl_close($curl);
 			
 		// Return response from Refersion
 		return $response;
 	
-	}//end function curl_refersion_post
+	}
 
 }
