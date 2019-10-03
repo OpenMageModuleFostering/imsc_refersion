@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Imsc_refersion",
+    "name": "OpenMageModuleFostering\/Imsc_refersion",
     "type": "magento-module",
     "license": "GNU-General-Public-License",
     "homepage": "",
     "description": "Create a customized Affiliate Program for your shop in minutes. Build partnerships and generate more sales.",
     "authors": [
-    {
-        "name": "Refersion",
-        "email": "helpme@refersion.com"
-    }
-],
+        {
+            "name": "Refersion",
+            "email": "helpme@refersion.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
